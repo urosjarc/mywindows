@@ -5,8 +5,6 @@ $B3_VERSION = "0.7"
 $GIT_USER = "urosjarc"
 $GIT_EMAIL = "jar.fmf@gmail.com"
 
-echo $APPS_DIR
-
 # INIT
 Remove-Item -Recurse -Force $TMP_DIR
 Remove-Item -Recurse -Force $APPS_DIR
@@ -23,8 +21,8 @@ Get-WindowsUpdate -AcceptAll -Install
 .\scripts\npm.ps1
 .\scripts\pip.ps1
 
-# CONFIG
-Move-Item -Force .\config\Config.ini
+# # CONFIG
+Move-Item .\config\b3.config "$APPS_DIR/b3-$B3_VERSION/bin/config"
 git config --global user.name "$GIT_USER"
 git config --global user.email "$GIT_EMAIL"
 reg import .\config\registery.reg
