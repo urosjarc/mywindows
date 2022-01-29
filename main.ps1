@@ -8,8 +8,8 @@ $GIT_EMAIL = "jar.fmf@gmail.com"
 Remove-Item -Recurse -Force $TMP_DIR
 mkdir -Force $TMP_DIR
 
-# SETUP
-.\scripts\setup.ps1
+# DEPENDENCIES
+.\scripts\deps.ps1
 
 # INSTALL
 Get-WindowsUpdate -AcceptAll -Install
@@ -22,3 +22,6 @@ Get-WindowsUpdate -AcceptAll -Install
 Move-Item -Force .\config\Config.ini
 git config --global user.name "$GIT_USER"
 git config --global user.email "$GIT_EMAIL"
+Set-Location HKLM:\SOFTWARE\Policies\Microsoft\Windows
+New-ItemProperty -Force -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" -Name "NoLockScreen" -Value 1 -PropertyType Dword
+Set-ItemProperty -Force -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" -Name "NoLockScreen" -Value 1
