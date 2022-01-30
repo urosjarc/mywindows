@@ -17,5 +17,6 @@ LOG_TITLE "SETUP FOLDERS"			| .\preinstall\folders.ps1
 
 LOG_TITLE "POS-TINSTALL *******************************************"
 LOG_TITLE "DEBLOAT WINDOWS"			| .\postinstall\debloat.ps1
+LOG_TITLE "SETUP DATE AND TIME"		| .\postinstall\time_date.ps1
 LOG_TITLE "SETUP GIT"				| .\postinstall\git.ps1
 LOG_TITLE "FIX REGISTERY"			| .\postinstall\registery.ps1

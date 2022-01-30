@@ -1,5 +1,5 @@
 Set-StrictMode -Version Latest
 
-$ErrorActionPreference = "Confirm"
+$ErrorActionPreference = "Continue"
 $DebugPreference = "Continue"
 $ProgressPreference = 'SilentlyContinue'
