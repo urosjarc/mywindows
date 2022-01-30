@@ -25,6 +25,7 @@ function LOG_TITLE {
 	Write-Host " $msg"
 	Write-Host "==============================="
 	Write-Host ""
+	Start-Sleep 1
 }
 function APP_KILL {
 	param ( $app)
