@@ -1,0 +1,1 @@
+reg import "$FILES_DIR\registery.reg"

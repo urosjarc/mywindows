@@ -1,31 +1,19 @@
-# Set variables
-$TMP_DIR = ".\tmp"
-$APPS_DIR = "$env:USERPROFILE\APPS"
-$B3_VERSION = "0.7"
-$GIT_USER = "urosjarc"
-$GIT_EMAIL = "jar.fmf@gmail.com"
+. .\powershell\variables.ps1
+. .\powershell\functions.ps1
 
-# INIT
-taskkill /IM "b3.exe" /F
-Remove-Item -Recurse -Force $TMP_DIR
-Remove-Item -Recurse -Force $APPS_DIR
-mkdir -Force $TMP_DIR
-mkdir -Force $APPS_DIR
+LOG_TITLE "CONFIRM VARIABLES" 		| .\preinstall\variables.ps1
+LOG_TITLE "KILL PROCESSES"			| .\preinstall\kill.ps1
+LOG_TITLE "SETUP FOLDERS"			| .\preinstall\folders.ps1
+LOG_TITLE "INSTALL DEPENDENCIES"	| .\preinstall\dependencies.ps1
 
-# DEPENDENCIES
-# .\scripts\deps.ps1
+LOG_TITLE "INSTALL WINDOWS UPDATE"	| .\install\windows_updates.ps1
+LOG_TITLE "INSTALL CHOCOLATEY"		| .\install\chocolatey.ps1
+LOG_TITLE "INSTALL PIP"				| .\install\pip.ps1
+LOG_TITLE "INSTALL NPM"				| .\install\npm.ps1
+LOG_TITLE "INSTALL B3"				| .\install\b3.ps1
+exit 0
 
-# # INSTALL
-# Get-WindowsUpdate -AcceptAll -Install
-.\scripts\git.ps1
-# .\scripts\chocolatey.ps1
-# .\scripts\npm.ps1
-# .\scripts\pip.ps1
-
-# # # CONFIG
-# Move-Item .\config\b3.config "$APPS_DIR/b3-$B3_VERSION/bin/config"
-# git config --global user.name "$GIT_USER"
-# git config --global user.email "$GIT_EMAIL"
-# reg import .\config\registery.reg
-
-# REMOVE BLOATWARE
+LOG_TITLE "POSTINSTALL"
+LOG_TITLE "DEBLOAT WINDOWS"			| .\postinstall\debloat.ps1
+LOG_TITLE "SETUP GIT"				| .\postinstall\git.ps1
+LOG_TITLE "FIX REGISTERY"			| .\postinstall\registery.ps1
