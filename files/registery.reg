@@ -26,4 +26,3 @@ Windows Registry Editor Version 5.00
 "ConsentPromptBehaviorAdmin"=dword:00000000
 "EnableInstallerDetection"=dword:00000000
 "EnableLUA"=dword:00000000
-
