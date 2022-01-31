@@ -22,6 +22,8 @@ Windows Registry Editor Version 5.00
 "Flags"="59" 
 "BounceTime"="0"
 
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3]
-"Settings"=dword:00000008
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000000
+"EnableInstallerDetection"=dword:00000000
+"EnableLUA"=dword:00000000
 
