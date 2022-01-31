@@ -7,7 +7,7 @@ Invoke-WebRequest "https://github.com/jstnlth/$NAME/archive/refs/heads/$TAG.zip"
 Expand-Archive "$TMP_DIR/debloat.zip" -DestinationPath $TMP_DIR
 
 # RUN DEBLOATER
-# & "$TMP_DIR\$NAME-$TAG\Windows10SysPrepDebloater.ps1" -Sysprep -Debloat -Privacy
+& "$TMP_DIR\$NAME-$TAG\Windows10SysPrepDebloater.ps1" -Sysprep -Debloat -Privacy
 
 $Bloatware = @(
 	"*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
