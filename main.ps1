@@ -15,7 +15,7 @@ LOG_TITLE "INSTALL PIP"				| .\install\pip.ps1
 LOG_TITLE "INSTALL NPM"				| .\install\npm.ps1
 LOG_TITLE "INSTALL B3"				| .\install\b3.ps1
 
-LOG_TITLE "POS-TINSTALL"
+LOG_TITLE "POS-INSTALL"
 LOG_TITLE "DEBLOAT WINDOWS"			| .\postinstall\debloat.ps1
 LOG_TITLE "SETUP KEYBOARD"			| .\postinstall\keyboard.ps1
 LOG_TITLE "REMAP KEY SHORTCUTS"		| .\postinstall\auto_hot_key.ps1
