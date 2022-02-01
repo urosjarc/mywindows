@@ -9,5 +9,6 @@ $GIT_EMAIL = "jar.fmf@gmail.com"
 $ROOT_DIR = (Split-Path $PSScriptRoot -Parent)
 $TMP_DIR = "$ROOT_DIR\tmp"
 $FILES_DIR = "$ROOT_DIR\files"
+$BACKUP_DIR = "$ROOT_DIR\backup"
 $STARTUP_DIR = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 $APPS_DIR = "$env:USERPROFILE\APPS"
