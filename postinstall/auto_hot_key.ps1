@@ -1,0 +1,1 @@
+COPY_ITEM $FILES_DIR\AutoHotKey.ahk $STARTUP_DIR

@@ -3,9 +3,9 @@ choco upgrade chocolatey
 
 # System drivers
 choco install wacom-drivers -y
+choco install autohotkey -y
 
 # Online
-choco install googlechrome -y
 choco install zoom -y
 
 # Editors
