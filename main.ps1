@@ -22,5 +22,6 @@ LOG_TITLE "REMAP KEY SHORTCUTS"		| .\postinstall\auto_hot_key.ps1
 LOG_TITLE "SETUP DATE AND TIME"		| .\postinstall\time_date.ps1
 LOG_TITLE "SETUP GIT"				| .\postinstall\git.ps1
 LOG_TITLE "FIX REGISTERY"			| .\postinstall\registery.ps1
+LOG_TITLE "MANUAL SETUP"			| .\postinstall\manual_setup.ps1
 
 LOG_TITLE "RESTART COMPUTER" 		| Restart-Computer -Confirm

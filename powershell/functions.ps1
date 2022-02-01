@@ -4,12 +4,11 @@ function LOG_EXE($msg) {
 function LOG($msg) {
     Write-Debug $msg
 }
-function PROCEED {
+function PROCEED($msg) {
     $title = " "
-    $question = 'Are you sure you want to proceed?'
     $choices = '&Yes', '&No'
 
-    $decision = $Host.UI.PromptForChoice($title, $question, $choices, 0)
+    $decision = $Host.UI.PromptForChoice($title, $msg, $choices, 0)
     if ($decision -eq 1) {
         exit 1
     }

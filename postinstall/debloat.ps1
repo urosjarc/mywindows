@@ -24,6 +24,3 @@ foreach ($Bloat in $Bloatware) {
 Pin-App "Microsoft Edge" -unpin -start -taskbar
 Pin-App "Microsoft Store" -unpin -start -taskbar
 
-Start-Process "ms-settings:taskbar"
-Add-Type -AssemblyName Microsoft.VisualBasic
-[Microsoft.VisualBasic.Interaction]::MsgBox('Deactivate taskbar items, auto hide taskbar...','OKOnly,SystemModal,Information', 'Debloater')

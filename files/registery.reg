@@ -1,33 +1,41 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-"DisableLockWorkstation"=dword:00000001
+; File explorer
+	[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+	"Hidden"=dword:00000001
 
-;BUG: Windows doesn't check this value (waiting for the bug fix)
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"ShowSecondsInSystemClock"=dword:00000001
+	[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+	"HideFileExt"=dword:00000000
 
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"Hidden"=dword:00000001
+; Popups notification
+	[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PushNotifications]
+	"ToastEnabled"=dword:00000000
 
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"HideFileExt"=dword:00000000
+	[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+	"ConsentPromptBehaviorAdmin"=dword:00000000
+	"EnableInstallerDetection"=dword:00000000
+	"EnableLUA"=dword:00000000
 
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PushNotifications]
-"ToastEnabled"=dword:00000000
+; Keyboard settings
+	[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
+	"AutoRepeatDelay"="180" 
+	"AutoRepeatRate"="10" 
+	"DelayBeforeAcceptance"="20" 
+	"Flags"="59" 
+	"BounceTime"="0"
 
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer ]
-"NoWinKeys"=dword:00000001
+	[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer ]
+	"NoWinKeys"=dword:00000001
 
+	[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+	"DisableLockWorkstation"=dword:00000001
 
-[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
-"AutoRepeatDelay"="180" 
-"AutoRepeatRate"="10" 
-"DelayBeforeAcceptance"="20" 
-"Flags"="59" 
-"BounceTime"="0"
+; Taskbar
+	;BUG: Windows doesn't check this value (waiting for the bug fix)
+	[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+	"ShowSecondsInSystemClock"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-"ConsentPromptBehaviorAdmin"=dword:00000000
-"EnableInstallerDetection"=dword:00000000
-"EnableLUA"=dword:00000000
+; Explorer
+	[HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
+	"ColorPrevalence"=dword:00000001
+	"ColorizationColor"=dword:
