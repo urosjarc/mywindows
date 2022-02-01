@@ -1,56 +1,54 @@
-# Drivers
-* Windows update
-* wacom drivers: Wacom Intuos M BT (2018)
-* USB wifi drivers: Linksys WUSB6300
+# My Windows
 
-# Apps
-* bug.n
-* visual studio code
-* epic installer, unreal engine 5
-* chrome
-* zoom
-* winrar
-* meld
+This is auto installation script for settings my OS like a boss.
 
+# Features
 
-# Programming
-* git
-* node
-* python
-* java jdk
-* mingw (sourceforge)
+* Install apps over [chocolatey](https://chocolatey.org/) ;)
+* Setup VIM like keys in [auto hot key app](https://www.autohotkey.com/).
+* Install libs for pyhon and node.js
+* Install [b3 (i3 version of windows)](https://github.com/ritschmaste/b3)
+* Install latest windows updates
+* Setup custom shortcuts with [auto hot key app](https://www.autohotkey.com/)
+* [Debloats stupid windows apps](https://github.com/Sycnex/Windows10Debloater)
+* Setup git user and git email
+* Setup default keyboard layouts
+* Setup custom time format in taskbar
+* Setup registery settings:
+  * Disable shortcut Win+L (lock screen)
+  * Auto hide taskbar
+  * Show clock seconds
+  * Show hidden files
+  * Show file extensions
+  * Disable notifications
+  * Disable hot keys.
+  * Make typing faster on keyboard
+  * Disable Admin prompt for executing programs.
 
-# npm
-* npm install -g npm
-* npm install -g @vue/cli
+# How it works?
 
-# pip
-* pip install --upgrade pip
-* pip install conan
-* pip install jupyter
-* pip install jupyter_contrib_nbextensions
-* pip install jupyter_nbextensions_configurator
+Take a look at `main.ps1` in which magic happens. In this file
+you can have overview what happens on installation.
 
-# Sync
-* Visual studio code
-* Chrome
-* Unreal engine 5
-* Wacom Desktop Center
+# Project structure
 
-# SETUP
-* Install ligature fonts: CascadiaCode-Light
-* Wacom Tablet Properties > Mapping > (Screen Area: Portion... , Tablet Area: Full)
-* Add "C:\MinGW\bin" in path
-* Remove bloatware
-* Clean desktop, bottoom apps
-# GIT CONFIG
+* `./powershell` All variables, functions, preferences that will be used in `main.ps1`.
+* `./backup` Here is files created with `backup.ps1`.
+* `./files` All the files that is used in installation process.
+* `./preinstall` All pre-install scripts that will setup everything up.
+* `./install` Install all applications.
+* `./postinstall` All post-installation scripts that will configure apps after installation.
 
-# SET SHORTCUTS *windows*
-* Cap locks as esc, esc as caplocks
-* jklh
-https://github.com/urosjarc/mylinux/blob/master/data/dotfiles/~_%7C_.i3_%7C_config
-https://github.com/urosjarc/mylinux/blob/master/data/dotfiles/~_%7C_.i3_%7C_i3status.conf
-language toggle
+# How to configure project
 
-# TERMINAL
-printf '\n ---> WELLCOME :)\n'
+First change all the variables in `./powershell/variables.ps1` to your specific needs.
+
+Change list of applications that will install in all the scripts in `./install` directory.
+
+# How to execute script
+
+Open powershell in admin mode, then `cd` to root dir of this project, and then execute...
+
+```powershell
+.\main.ps1
+```

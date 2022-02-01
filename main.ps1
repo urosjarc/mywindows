@@ -17,7 +17,8 @@ LOG_TITLE "INSTALL B3"				| .\install\b3.ps1
 
 LOG_TITLE "POS-TINSTALL"
 LOG_TITLE "DEBLOAT WINDOWS"			| .\postinstall\debloat.ps1
-LOG_TITLE "SETUP AUTO HOT KEYS"			| .\postinstall\auto_hot_key.ps1
+LOG_TITLE "SETUP KEYBOARD"			| .\postinstall\keyboard.ps1
+LOG_TITLE "REMAP KEY SHORTCUTS"		| .\postinstall\auto_hot_key.ps1
 LOG_TITLE "SETUP DATE AND TIME"		| .\postinstall\time_date.ps1
 LOG_TITLE "SETUP GIT"				| .\postinstall\git.ps1
 LOG_TITLE "FIX REGISTERY"			| .\postinstall\registery.ps1
