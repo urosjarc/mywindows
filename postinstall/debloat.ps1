@@ -2,13 +2,14 @@
 $NAME = "Windows10Debloater"
 $TAG = "addWhitelistDefaults"
 
-# GET DEBLOATER
+LOG_TITLE "Getting debloater"
 Invoke-WebRequest "https://github.com/jstnlth/$NAME/archive/refs/heads/$TAG.zip" -OutFile "$TMP_DIR/debloat.zip"
 Expand-Archive "$TMP_DIR/debloat.zip" -DestinationPath $TMP_DIR
 
-# RUN DEBLOATER
+LOG_TITLE "Running debloater"
 & "$TMP_DIR\$NAME-$TAG\Windows10SysPrepDebloater.ps1" -Sysprep -Debloat -Privacy
 
+LOG_TITLE "Removing custom apps"
 $Bloatware = @(
 	"*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
 	"*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
@@ -21,6 +22,7 @@ foreach ($Bloat in $Bloatware) {
 	Write-Output "Trying to remove $Bloat."
 }
 
+LOG_TITLE "Cleaning taskbar"
 Pin-App "Microsoft Edge" -unpin -start -taskbar
 Pin-App "Microsoft Store" -unpin -start -taskbar
 

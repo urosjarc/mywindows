@@ -4,4 +4,4 @@ Add-Type -AssemblyName Microsoft.VisualBasic
 
 Start-Process "ms-settings:colors"
 Add-Type -AssemblyName Microsoft.VisualBasic
-[Microsoft.VisualBasic.Interaction]::MsgBox('Select windows colors... Then click OK','OKOnly,SystemModal,Information', 'Debloater')
+$rez = [Microsoft.VisualBasic.Interaction]::MsgBox('Select windows colors... Then click OK','OKOnly,SystemModal,Information', 'Debloater')
