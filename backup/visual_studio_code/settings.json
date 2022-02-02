@@ -132,4 +132,5 @@
     "todo-tree.tree.disableCompactFolders": true,
     "explorer.compactFolders": false,
     "workbench.tree.indent": 30,
+    "git.confirmSync": false,
 }

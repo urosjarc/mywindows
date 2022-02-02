@@ -724,5 +724,10 @@
     {
         "key": "ctrl+r",
         "command": "editor.action.startFindReplaceAction"
-    }
+    },
+    {
+        "key": "alt+e",
+        "command": "html.showPreviewToSide",
+        "when": "editorLangId == 'html'"
+    },
 ]
