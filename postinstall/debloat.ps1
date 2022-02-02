@@ -20,7 +20,4 @@ foreach ($Bloat in $Bloatware) {
 	Write-Output "Trying to remove $Bloat."
 }
 
-LOG_TITLE "Cleaning taskbar"
-Pin-App "Microsoft Edge" -unpin -start -taskbar
-Pin-App "Microsoft Store" -unpin -start -taskbar
 
