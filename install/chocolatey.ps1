@@ -2,26 +2,27 @@ LOG_TITLE "Update chocolatey"
 choco upgrade chocolatey
 
 LOG_TITLE "Install drivers"
-choco install wacom-drivers -y
-choco install autohotkey -y
+choco install wacom-drivers -y --ignore-checksums
+choco install autohotkey -y --ignore-checksums
 
 LOG_TITLE "Install online tools"
-choco install zoom -y
+choco install zoom -y --ignore-checksums
+choco install googlechrome -y --ignore-checksums
 
 LOG_TITLE "Install editors"
-choco install vscode -y
-choco install epicgameslauncher -y
+choco install vscode -y --ignore-checksums
+choco install epicgameslauncher -y --ignore-checksums
 
 LOG_TITLE "Install programming tools"
-choco install nodejs -y
-choco install python -y
-choco install oraclejdk -y
-choco install mingw -y
+choco install nodejs -y --ignore-checksums
+choco install python -y --ignore-checksums
+choco install oraclejdk -y --ignore-checksums
+choco install mingw -y --ignore-checksums
 
 LOG_TITLE "Install utils"
-choco install git -y
-choco install winrar -y
-choco install meld -y
+choco install git -y --ignore-checksums
+choco install winrar -y --ignore-checksums
+choco install meld -y --ignore-checksums
 
 LOG_TITLE "Install fonts"
-choco install cascadiacode -y
+choco install cascadiacode -y --ignore-checksums

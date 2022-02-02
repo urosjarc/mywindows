@@ -4,6 +4,7 @@ This is auto installation script for settings my OS like a boss.
 
 # Features
 
+* Logs all execution to log file.
 * Install apps over [chocolatey](https://chocolatey.org/) ;)
 * Setup VIM like keys in [auto hot key app](https://www.autohotkey.com/).
 * Install libs for pyhon and node.js
@@ -50,5 +51,5 @@ Change list of applications that will install in all the scripts in `./install` 
 Open powershell in admin mode, then `cd` to root dir of this project, and then execute...
 
 ```powershell
-.\main.ps1
+Set-ExecutionPolicy Bypass -Scope Process -Force ; .\main.ps1
 ```

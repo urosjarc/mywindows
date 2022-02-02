@@ -1,6 +1,9 @@
+. .\powershell\prepare.ps1
 . .\powershell\preferences.ps1
 . .\powershell\variables.ps1
 . .\powershell\functions.ps1
+
+Start-Transcript -Path $LOG_FILE -Force
 
 LOG_TITLE "PRE-INSTALL"
 LOG_TITLE "CONFIRM VARIABLES" 		| .\preinstall\variables.ps1
@@ -24,5 +27,6 @@ LOG_TITLE "SETUP GIT"				| .\postinstall\git.ps1
 LOG_TITLE "FIX REGISTERY"			| .\postinstall\registery.ps1
 LOG_TITLE "MANUAL SETUP"			| .\postinstall\manual_setup.ps1
 
-LOG_TITLE "RESTART COMPUTER"
+LOG_TITLE "FINISH"
+Stop-Transcript
 Restart-Computer -Confirm

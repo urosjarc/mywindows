@@ -1,1 +1,1 @@
-Get-WindowsUpdate -AcceptAll -Install
+Get-WindowsUpdate -AcceptAll -Install -IgnoreReboot

@@ -1,6 +1,6 @@
 # INSTALLATION OF WINDOWS UPDATE
 LOG_TITLE "Install windows update module"
-Install-Module PSWindowsUpdate
+Install-Module -Name PSWindowsUpdate -Force
 
 # INTALATION OF CHOCOLATEY
 LOG_TITLE "Install chocolatey package manager"
