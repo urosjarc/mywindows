@@ -5,3 +5,7 @@ Add-Type -AssemblyName Microsoft.VisualBasic
 Start-Process "ms-settings:colors"
 Add-Type -AssemblyName Microsoft.VisualBasic
 $rez = [Microsoft.VisualBasic.Interaction]::MsgBox('Select windows colors... Then click OK','OKOnly,SystemModal,Information', 'Debloater')
+
+$id = Start-Process "ms-settings:nightlight"
+Add-Type -AssemblyName Microsoft.VisualBasic
+$rez = [Microsoft.VisualBasic.Interaction]::MsgBox('Activate night light... Then click OK','OKOnly,SystemModal,Information', 'Debloater')
