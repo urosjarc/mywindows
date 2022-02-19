@@ -27,6 +27,4 @@ choco install winrar -y --ignore-checksums
 choco install meld -y --ignore-checksums
 
 LOG_TITLE "Install fonts"
-choco install cascadiacode -y --ignore-checksums
-choco install firacode -y --ignore-checksums
-choco install droidsansmono -y --ignore-checksums
+choco install jetbrainsmono -y --ignore-checksums
