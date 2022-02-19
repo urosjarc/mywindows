@@ -12,6 +12,8 @@ choco install googlechrome -y --ignore-checksums
 LOG_TITLE "Install editors"
 choco install vscode -y --ignore-checksums
 choco install epicgameslauncher -y --ignore-checksums
+choco install blender -y --ignore-checksums
+choco install postman -y --ignore-checksums
 
 LOG_TITLE "Install programming tools"
 choco install nodejs -y --ignore-checksums
@@ -26,3 +28,5 @@ choco install meld -y --ignore-checksums
 
 LOG_TITLE "Install fonts"
 choco install cascadiacode -y --ignore-checksums
+choco install firacode -y --ignore-checksums
+choco install droidsansmono -y --ignore-checksums
