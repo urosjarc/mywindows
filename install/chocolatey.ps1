@@ -20,6 +20,8 @@ choco install nodejs -y --ignore-checksums
 choco install python -y --ignore-checksums
 choco install oraclejdk -y --ignore-checksums
 choco install mingw -y --ignore-checksums
+choco install cmake -y --ignore-checksums
+choco install make -y --ignore-checksums
 
 LOG_TITLE "Install utils"
 choco install git -y --ignore-checksums
