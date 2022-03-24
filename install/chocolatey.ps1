@@ -14,6 +14,7 @@ choco install vscode -y --ignore-checksums
 choco install epicgameslauncher -y --ignore-checksums
 choco install blender -y --ignore-checksums
 choco install postman -y --ignore-checksums
+choco install steam-client -y --ignore-checksums
 
 LOG_TITLE "Install programming tools"
 choco install nodejs -y --ignore-checksums
@@ -22,6 +23,7 @@ choco install oraclejdk -y --ignore-checksums
 choco install mingw -y --ignore-checksums
 choco install cmake -y --ignore-checksums
 choco install make -y --ignore-checksums
+choco install windows-sdk-10.1 --ignore-checksums
 
 LOG_TITLE "Install utils"
 choco install git -y --ignore-checksums
