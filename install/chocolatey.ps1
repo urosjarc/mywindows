@@ -4,6 +4,7 @@ choco upgrade chocolatey
 LOG_TITLE "Install drivers"
 choco install wacom-drivers -y --ignore-checksums
 choco install autohotkey -y --ignore-checksums
+choco install geforce-experience -y --ignore-checksums
 
 LOG_TITLE "Install online tools"
 choco install zoom -y --ignore-checksums
