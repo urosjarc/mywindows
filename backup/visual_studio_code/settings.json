@@ -5,12 +5,29 @@
         "<C-a>": false,
         "<C-f>": false
     },
+    "macros": {
+        "commentDown": [
+            "editor.action.commentLine",
+            "cursorDown"
+        ]
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "args": [
+                "-ExecutionPolicy",
+                "Bypass"
+            ]
+        }
+    },
     "editor.fontLigatures": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.startupEditor": "none",
     "workbench.colorCustomizations": {
-        "tab.activeBackground": "#ffae00"
+        "tab.activeBackground": "#ffae0063"
     },
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
@@ -19,7 +36,7 @@
     "editor.insertSpaces": false,
     "editor.wordWrap": "off",
     "editor.accessibilitySupport": "off",
-    "editor.foldingImportsByDefault": true,
+    "editor.foldingImportsByDefault": false,
     "editor.guides.bracketPairsHorizontal": false,
     "editor.guides.highlightActiveIndentation": false,
     "editor.guides.highlightActiveBracketPair": false,
@@ -29,19 +46,18 @@
     "editor.matchBrackets": "near",
     "editor.mouseWheelZoom": true,
     "editor.renderLineHighlight": "none",
-    "editor.scrollbar.vertical": "hidden",
     "editor.lineNumbers": "off",
     "editor.minimap.enabled": false,
     "editor.overviewRulerBorder": false,
-    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.scrollbar.verticalScrollbarSize": 20,
     "editor.smoothScrolling": true,
     "editor.unfoldOnClickAfterEndOfLine": false,
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": false,
     "editor.cursorSurroundingLines": 10,
-    "editor.fontFamily": "Cascadia Code Light, Consolas, 'Courier New', monospace",
-    "editor.fontWeight": "bold",
-    "workbench.colorTheme": "Solarized Light",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontWeight": "400",
+    "editor.lineHeight": "1.4",
     "editor.suggest.insertMode": "replace",
     "editor.suggest.localityBonus": true,
     "files.eol": "\n",
@@ -58,7 +74,6 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "explorer.confirmDelete": false,
     "files.enableTrash": false,
     "vim.useSystemClipboard": true,
     "git.autofetch": true,
@@ -131,6 +146,24 @@
     "todo-tree.general.enableFileWatcher": true,
     "todo-tree.tree.disableCompactFolders": true,
     "explorer.compactFolders": false,
-    "workbench.tree.indent": 30,
+    "workbench.tree.indent": 20,
     "git.confirmSync": false,
+    "vscode-office.openOutline": false,
+    "git.enableSmartCommit": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "vim.foldfix": true,
+    "tabnine.experimentalAutoImports": true,
+    "debug.terminal.clearBeforeReusing": true,
+    "explorer.openEditors.visible": 0,
+    "workbench.editor.limit.value": 4,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.colorTheme": "Monokai",
+    "editor.tabSize": 2,
+    "explorer.confirmDelete": false,
+    "editor.wordWrapColumn": 40,
+    "terminal.integrated.fontFamily": "monospace",
+    "editor.scrollbar.vertical": "visible",
+    "cmake.configureOnOpen": true,
+    "C_Cpp.clang_format_style": "{BasedOnStyle: WebKit, IndentCaseLabels: true, BreakBeforeBraces: Custom, AllowShortEnumsOnASingleLine: true, AllowShortCaseLabelsOnASingleLine: true,  AllowShortLoopsOnASingleLine: true, BraceWrapping: { AfterFunction: false}, AllowShortIfStatementsOnASingleLine: true, IndentWidth: 2, ColumnLimit: 0, Cpp11BracedListStyle: false, PointerAlignment: Left}",
 }

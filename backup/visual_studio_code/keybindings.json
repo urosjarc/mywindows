@@ -9,11 +9,6 @@
         "command": "-code-runner.run"
     },
     {
-        "key": "alt+f",
-        "command": "workbench.view.explorer",
-        "when": "viewContainer.workbench.view.explorer.enabled"
-    },
-    {
         "key": "ctrl+shift+e",
         "command": "-workbench.view.explorer",
         "when": "viewContainer.workbench.view.explorer.enabled"
@@ -84,16 +79,6 @@
         "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
     },
     {
-        "key": "alt+/",
-        "command": "editor.action.commentLine",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+/",
-        "command": "-editor.action.commentLine",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "alt+d",
         "command": "-plantuml.preview"
     },
@@ -155,7 +140,8 @@
     },
     {
         "key": "alt+o",
-        "command": "workbench.action.navigateForward"
+        "command": "workbench.action.navigateForward",
+        "when": "editorFocus"
     },
     {
         "key": "alt+right",
@@ -323,16 +309,6 @@
     },
     {
         "key": "alt+r",
-        "command": "editor.action.refactor",
-        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+r",
-        "command": "-editor.action.refactor",
-        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+r",
         "command": "-toggleFindRegex",
         "when": "editorFocus"
     },
@@ -448,7 +424,7 @@
         "command": "-redo"
     },
     {
-        "key": "alt+j",
+        "key": "down",
         "command": "selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
@@ -458,7 +434,7 @@
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
     {
-        "key": "alt+k",
+        "key": "up",
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
@@ -670,7 +646,8 @@
     },
     {
         "key": "alt+q",
-        "command": "workbench.files.action.collapseExplorerFolders"
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "!editorFocus"
     },
     {
         "key": "alt+g",
@@ -730,4 +707,65 @@
         "command": "html.showPreviewToSide",
         "when": "editorLangId == 'html'"
     },
+    {
+        "key": "alt+/",
+        "command": "macros.commentDown"
+    },
+    {
+        "key": "ctrl+k ctrl+o",
+        "command": "-workbench.action.files.openFolder",
+        "when": "openFolderWorkspaceSupport"
+    },
+    {
+        "key": "alt+o",
+        "command": "workbench.action.files.openFolder",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "alt+t",
+        "command": "outline.focus"
+    },
+    {
+        "key": "l",
+        "command": "list.expand",
+        "when": "listFocus && treeElementCanExpand && !inputFocus || listFocus && treeElementHasChild && !inputFocus"
+    },
+    {
+        "key": "alt+q",
+        "command": "list.collapseAll",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "-list.collapseAll",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "alt+r",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+f",
+        "command": "extension.vim_ctrl+b",
+        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-extension.vim_ctrl+b",
+        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "alt+f",
+        "command": "workbench.view.explorer"
+    }
 ]
