@@ -1,6 +1,3 @@
-# VERSIONS
-$B3_VERSION = "0.7"
-
 # USER VARIABLES
 $GIT_USER = "urosjarc"
 $GIT_EMAIL = "jar.fmf@gmail.com"

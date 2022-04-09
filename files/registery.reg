@@ -34,8 +34,3 @@ Windows Registry Editor Version 5.00
 	;BUG: Windows doesn't check this value (waiting for the bug fix)
 	[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 	"ShowSecondsInSystemClock"=dword:00000001
-
-; Colors
-	[HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
-	"ColorPrevalence"=dword:00000001
-	"ColorizationColor"=dword:
