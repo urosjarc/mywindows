@@ -22,7 +22,6 @@ choco install python -y --ignore-checksums
 choco install oraclejdk -y --ignore-checksums
 choco install cmake -y --ignore-checksums
 choco install make -y --ignore-checksums
-choco install windows-sdk-10.1 --ignore-checksums
 
 LOG_TITLE "Install utils"
 choco install git -y --ignore-checksums
