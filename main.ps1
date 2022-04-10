@@ -5,7 +5,9 @@
 
 Start-Transcript -Path $LOG_FILE -Force
 
+
 LOG_TITLE "PRE-INSTALL"
+LOG_TITLE "WINDOWS UPDATES"					| .\preinstall\windows-updates.ps1
 LOG_TITLE "CONFIRM VARIABLES" 			| .\preinstall\variables.ps1
 LOG_TITLE "SETUP FOLDERS"						| .\preinstall\folders.ps1
 LOG_TITLE "INSTALL DEPENDENCIES"		| .\preinstall\dependencies.ps1
