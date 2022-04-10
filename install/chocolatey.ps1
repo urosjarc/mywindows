@@ -16,6 +16,7 @@ choco install epicgameslauncher -y --ignore-checksums
 choco install blender -y --ignore-checksums
 choco install postman -y --ignore-checksums
 choco install steam-client -y --ignore-checksums
+choco install gimp -y --ignore-checksums
 
 LOG_TITLE "Install programming tools"
 choco install nodejs -y --ignore-checksums
