@@ -17,6 +17,8 @@ choco install blender -y --ignore-checksums
 choco install postman -y --ignore-checksums
 choco install steam-client -y --ignore-checksums
 choco install gimp -y --ignore-checksums
+choco install vlc -y --ignore-checksums
+choco install audacity -y --ignore-checksums
 
 LOG_TITLE "Install programming tools"
 choco install nodejs -y --ignore-checksums
