@@ -19,6 +19,7 @@ choco install steam-client -y --ignore-checksums
 choco install gimp -y --ignore-checksums
 choco install vlc -y --ignore-checksums
 choco install audacity -y --ignore-checksums
+choco install obs-studio -y --ignore-checksums
 
 LOG_TITLE "Install programming tools"
 choco install nodejs -y --ignore-checksums
