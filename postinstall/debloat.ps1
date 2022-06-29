@@ -1,8 +1,8 @@
 # Start main debloater
 $NAME = "Windows10Debloater"
-$TAG = "addWhitelistDefaults"
+$TAG = "master"
 
-Invoke-WebRequest "https://github.com/jstnlth/$NAME/archive/refs/heads/$TAG.zip" -OutFile "$TMP_DIR/debloat.zip"
+Invoke-WebRequest "https://github.com/Sycnex/$NAME/archive/refs/heads/$TAG.zip" -OutFile "$TMP_DIR/debloat.zip"
 Expand-Archive "$TMP_DIR/debloat.zip" -DestinationPath $TMP_DIR
 
 & "$TMP_DIR\$NAME-$TAG\Windows10SysPrepDebloater.ps1" -Sysprep -Debloat -Privacy
@@ -19,5 +19,3 @@ foreach ($Bloat in $Bloatware) {
 	Get-AppxProvisionedPackage -Online | Where-Object DisplayName -like $Bloat | Remove-AppxProvisionedPackage -Online
 	Write-Output "Trying to remove $Bloat."
 }
-
-
