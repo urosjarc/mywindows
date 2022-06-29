@@ -8,7 +8,6 @@ This is auto installation script for settings my OS like a boss.
 * Install apps over [chocolatey](https://chocolatey.org/) ;)
 * Setup VIM like keys in [auto hot key app](https://www.autohotkey.com/).
 * Install libs for pyhon and node.js
-* Install [b3 (i3 version of windows)](https://github.com/ritschmaste/b3)
 * Install latest windows updates
 * Setup custom shortcuts with [auto hot key app](https://www.autohotkey.com/)
 * [Debloats stupid windows apps](https://github.com/Sycnex/Windows10Debloater)
