@@ -1,7 +1,7 @@
 ; Replace Ctrl with Esc
 $Capslock::Send,{Esc}
 
-#C::Send !{F4}
+#c::WinClose A
 
 ; VIM like navigation
 RAlt & j::Send,{Down}
