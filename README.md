@@ -50,5 +50,5 @@ Change list of applications that will install in all the scripts in `./install` 
 Open powershell in admin mode, then `cd` to root dir of this project, and then execute...
 
 ```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force ; .\main.ps1
+Set-ExecutionPolicy Unrestricted -Force ; .\main.ps1
 ```

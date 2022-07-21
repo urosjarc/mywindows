@@ -12,6 +12,7 @@ choco install googlechrome -y --ignore-checksums
 LOG_TITLE "Install editors"
 choco install jetbrainstoolbox -y --ignore-checksums
 choco install postman -y --ignore-checksums
+choco install vim -y --ignore-checksums
 
 LOG_TITLE "Install programming tools"
 choco install nodejs -y --ignore-checksums
